@@ -144,7 +144,77 @@ a {
     </a>
   </p>
 </div>
-  
+  <div class="section">
+  <h2>Maintenance Request</h2>
+  <p>Please complete the form below to submit a maintenance request.</p>
+
+  <form action="https://formspree.io/f/xnjgrpwa" method="POST" style="display:grid; gap:14px; max-width:700px; margin:0 auto; text-align:left;">
+    <input type="hidden" name="_subject" value="ARRK Maintenance Request">
+    
+    <label>
+      Full Name<br>
+      <input type="text" name="tenant_name" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+    </label>
+
+    <label>
+      Email Address<br>
+      <input type="email" name="email" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+    </label>
+
+    <label>
+      Phone Number<br>
+      <input type="tel" name="phone" style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+    </label>
+
+    <label>
+      Property Address / Unit<br>
+      <input type="text" name="property_unit" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+    </label>
+
+    <label>
+      Issue Type<br>
+      <select name="issue_type" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+        <option value="">Select one</option>
+        <option>Plumbing</option>
+        <option>Electrical</option>
+        <option>HVAC</option>
+        <option>Appliance</option>
+        <option>Pest Control</option>
+        <option>General Repair</option>
+        <option>Other</option>
+      </select>
+    </label>
+
+    <label>
+      Urgency<br>
+      <select name="urgency" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+        <option value="">Select one</option>
+        <option>Emergency</option>
+        <option>Urgent</option>
+        <option>Routine</option>
+      </select>
+    </label>
+
+    <label>
+      Description of Issue<br>
+      <textarea name="issue_description" rows="5" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;"></textarea>
+    </label>
+
+    <label>
+      Best Time to Contact You<br>
+      <input type="text" name="best_time_to_contact" style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+    </label>
+
+    <label style="display:flex; gap:10px; align-items:flex-start;">
+      <input type="checkbox" name="permission_to_enter" value="Yes">
+      <span>Permission to enter the unit if resident is not present</span>
+    </label>
+
+    <button type="submit" style="background:#1f3a6d; color:#fff; border:none; padding:12px 18px; border-radius:8px; font-weight:bold; cursor:pointer;">
+      Submit Maintenance Request
+    </button>
+  </form>
+</div>
 </div>
 <footer style="text-align:center; margin-top:40px; color:#6b7280; font-size:14px;">
   ARRK Property Management LLC<br>
