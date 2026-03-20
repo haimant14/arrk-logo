@@ -169,39 +169,43 @@ a {
   </span>
 </p>
 </div>
-  
-</div>
-  <div class="section">
+<div class="section">
   <h2>Maintenance Request</h2>
-  <p>Please complete the form below to submit a maintenance request.</p>
+  <p style="color:#4b5563; line-height:1.6; margin-bottom:18px;">
+    Please complete the form below to submit a maintenance request.
+  </p>
 
-<form action="https://formspree.io/f/xnjgrpwa" method="POST" style="display:grid; gap:14px; max-width:700px; margin:0 auto; text-align:left;">
-  <input type="hidden" name="_subject" value="ARRK Maintenance Request">
-  <input type="hidden" name="_redirect" value="https://www.arrkpm.com/thank-you.html">
-    
-    <label>
+  <form action="https://formspree.io/f/xnjgrpwa" method="POST" style="max-width:700px; margin:0 auto; text-align:left;">
+    <input type="hidden" name="_subject" value="ARRK Maintenance Request">
+
+    <label for="full-name" style="display:block; margin-bottom:14px;">
       Full Name<br>
-      <input type="text" name="tenant_name" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="full-name" type="text" name="full_name" required
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="email" style="display:block; margin-bottom:14px;">
       Email Address<br>
-      <input type="email" name="email" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="email" type="email" name="email" required
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="phone" style="display:block; margin-bottom:14px;">
       Phone Number<br>
-      <input type="tel" name="phone" style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="phone" type="tel" name="phone"
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="unit" style="display:block; margin-bottom:14px;">
       Property Address / Unit<br>
-      <input type="text" name="property_unit" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="unit" type="text" name="property_unit" required
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="issue-type" style="display:block; margin-bottom:14px;">
       Issue Type<br>
-      <select name="issue_type" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <select id="issue-type" name="issue_type"
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
         <option value="">Select one</option>
         <option>Plumbing</option>
         <option>Electrical</option>
@@ -213,9 +217,10 @@ a {
       </select>
     </label>
 
-    <label>
+    <label for="urgency" style="display:block; margin-bottom:14px;">
       Urgency<br>
-      <select name="urgency" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <select id="urgency" name="urgency"
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
         <option value="">Select one</option>
         <option>Emergency</option>
         <option>Urgent</option>
@@ -223,97 +228,83 @@ a {
       </select>
     </label>
 
-    <label>
+    <label for="description" style="display:block; margin-bottom:14px;">
       Description of Issue<br>
-      <textarea name="issue_description" rows="5" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;"></textarea>
+      <textarea id="description" name="issue_description" rows="5" required
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;"></textarea>
     </label>
 
-    <label>
+    <label for="contact-time" style="display:block; margin-bottom:18px;">
       Best Time to Contact You<br>
-      <input type="text" name="best_time_to_contact" style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="contact-time" type="text" name="best_time_to_contact"
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label style="display:flex; gap:10px; align-items:flex-start;">
-      <input type="checkbox" name="permission_to_enter" value="Yes">
-      <span>Permission to enter the unit if resident is not present</span>
-    </label>
-<p style="font-size:14px; color:#6b7280; margin:0;">
-  After submission, you will see a confirmation page and we will review your request as soon as possible.
-</p> 
-  
-  <button <button type="submit" style="background:#1f3a6d; color:#fff; border:none; padding:12px 18px; border-radius:8px; font-weight:bold; cursor:pointer;">
-  Submit Request
-</button>
+    <button type="submit"
+      style="background:#1f3a6d; color:#fff; border:none; padding:12px 18px; border-radius:8px; font-weight:bold; cursor:pointer;">
+      Submit Maintenance Request
     </button>
   </form>
- <div class="section">
-  <h2>Emergency Maintenance</h2>
-  <p>
-    For maintenance emergencies involving immediate threats to safety or serious property damage,
-    please contact emergency services first if necessary, then notify management as soon as possible.
-  </p>
-  <p>
-    Examples may include active water intrusion, fire, smoke, electrical hazards, sewage backup,
-    or loss of essential services when conditions create an immediate health or safety concern.
-  </p>
-  <p>
-    For non-emergency maintenance issues, please use the maintenance request form on this page.
-  </p>
 </div>
-  </div>
+
 <div class="section">
   <h2>Move-Out Notice</h2>
-  <p style="color:#4b5563; line-height:1.6;">
+  <p style="color:#4b5563; line-height:1.6; margin-bottom:18px;">
     Please use the form below to provide written notice of your intended move-out.
   </p>
 
-  <form action="https://formspree.io/f/xqeyjdvn" method="POST" style="display:grid; gap:14px; max-width:700px; margin:0 auto; text-align:left;">
+  <form action="https://formspree.io/f/xqeyjdvn" method="POST" style="max-width:700px; margin:0 auto; text-align:left;">
     <input type="hidden" name="_subject" value="ARRK Move-Out Notice">
 
-    <label>
+    <label for="moveout-name" style="display:block; margin-bottom:14px;">
       Full Name<br>
-      <input type="text" name="resident_name" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="moveout-name" type="text" name="resident_name" required
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="moveout-unit" style="display:block; margin-bottom:14px;">
       Property Address / Unit<br>
-      <input type="text" name="property_unit" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="moveout-unit" type="text" name="property_unit" required
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="moveout-email" style="display:block; margin-bottom:14px;">
       Email Address<br>
-      <input type="email" name="email" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="moveout-email" type="email" name="email" required
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="moveout-phone" style="display:block; margin-bottom:14px;">
       Phone Number<br>
-      <input type="tel" name="phone" style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="moveout-phone" type="tel" name="phone"
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="moveout-date" style="display:block; margin-bottom:14px;">
       Intended Move-Out Date<br>
-      <input type="date" name="move_out_date" required style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="moveout-date" type="date" name="move_out_date" required
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="forwarding-address" style="display:block; margin-bottom:14px;">
       Forwarding Address<br>
-      <input type="text" name="forwarding_address" style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;">
+      <input id="forwarding-address" type="text" name="forwarding_address"
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;">
     </label>
 
-    <label>
+    <label for="moveout-comments" style="display:block; margin-bottom:18px;">
       Additional Comments<br>
-      <textarea name="comments" rows="4" style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px;"></textarea>
+      <textarea id="moveout-comments" name="comments" rows="4"
+        style="width:100%; padding:10px; margin-top:6px; border:1px solid #d1d5db; border-radius:8px; box-sizing:border-box;"></textarea>
     </label>
 
-    <p style="font-size:14px; color:#6b7280; margin:0;">
-      After submission, you will see a confirmation page and management will follow up regarding next steps.
-    </p>
-
-    <button type="submit" style="background:#1f3a6d; color:#fff; border:none; padding:12px 18px; border-radius:8px; font-weight:bold; cursor:pointer;">
+    <button type="submit"
+      style="background:#1f3a6d; color:#fff; border:none; padding:12px 18px; border-radius:8px; font-weight:bold; cursor:pointer;">
       Submit Move-Out Notice
     </button>
   </form>
 </div>
+    
 </div>
 <footer style="text-align:center; margin-top:40px; color:#6b7280; font-size:14px;">
   ARRK Property Management LLC<br>
