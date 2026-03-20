@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 500 300">
+<title>ARRK</title>
+<desc>ARRK roof logo refined</desc>
+<rect width="500" height="300" fill="#FFFFFF"/>
+
+<!-- Roof -->
+<polygon points="80,170 250,40 420,170 360,170 250,95 140,170" fill="#1F3A6D"/>
+<rect x="345" y="95" width="25" height="50" fill="#1F3A6D"/>
+
+<!-- Curve -->
+<path d="M120 180 Q250 140 380 180" stroke="#6FAF3B" stroke-width="20" fill="none"/>
+
+<!-- Window -->
+<rect x="235" y="110" width="15" height="15" fill="#6FAF3B"/>
+<rect x="255" y="110" width="15" height="15" fill="#6FAF3B"/>
+<rect x="235" y="130" width="15" height="15" fill="#6FAF3B"/>
+<rect x="255" y="130" width="15" height="15" fill="#6FAF3B"/>
+
+<!-- ARRK text -->
+<text x="250" y="260" font-family="Georgia, serif" font-size="90" font-weight="700" text-anchor="middle" fill="#1F3A6D">ARRK</text>
+
+</svg>
