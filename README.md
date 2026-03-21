@@ -1,0 +1,1 @@
+Webpage for small property management >4units. Website connects to personal domain, Pages includes maintenance request submission , general request submission , resident required documents: Tenant bill of right pdf, email consent pdf, move-in/move-out checklist.
