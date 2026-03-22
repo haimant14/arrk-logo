@@ -319,40 +319,81 @@ a {
 <div class="section">
   <h2>FAQ</h2>
 
-  <details style="margin-bottom:12px; border:1px solid #e5e7eb; border-radius:10px; background:#f9fafb; padding:14px 16px;">
-    <summary style="cursor:pointer; font-weight:600; color:#1f3a6d; list-style:none;">
-      How do I submit a maintenance request?
-    </summary>
-    <p style="margin:12px 0 0 0; color:#4b5563; line-height:1.6;">
-      Please use the Maintenance Request form on this page for non-emergency maintenance issues.
-    </p>
+  <style>
+    .faq-item {
+      margin-bottom: 12px;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background: #f9fafb;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #1f3a6d;
+      list-style: none;
+      padding: 14px 16px;
+      position: relative;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      font-weight: 600;
+      color: #1f3a6d;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      padding: 0 16px 14px 16px;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    .faq-answer p {
+      margin: 0;
+    }
+  </style>
+
+  <details class="faq-item">
+    <summary>How do I submit a maintenance request?</summary>
+    <div class="faq-answer">
+      <p>Please use the Maintenance Request form on this page for non-emergency maintenance issues.</p>
+    </div>
   </details>
 
-  <details style="margin-bottom:12px; border:1px solid #e5e7eb; border-radius:10px; background:#f9fafb; padding:14px 16px;">
-    <summary style="cursor:pointer; font-weight:600; color:#1f3a6d; list-style:none;">
-      How do I return signed documents?
-    </summary>
-    <p style="margin:12px 0 0 0; color:#4b5563; line-height:1.6;">
-      Signed documents may be returned by email to <a href="mailto:management@arrkpm.com">management@arrkpm.com</a>.
-    </p>
+  <details class="faq-item">
+    <summary>How do I return signed documents?</summary>
+    <div class="faq-answer">
+      <p>Signed documents may be returned by email to <a href="mailto:management@arrkpm.com">management@arrkpm.com</a>.</p>
+    </div>
   </details>
 
-  <details style="margin-bottom:12px; border:1px solid #e5e7eb; border-radius:10px; background:#f9fafb; padding:14px 16px;">
-    <summary style="cursor:pointer; font-weight:600; color:#1f3a6d; list-style:none;">
-      How do I send a general question or update my contact information?
-    </summary>
-    <p style="margin:12px 0 0 0; color:#4b5563; line-height:1.6;">
-      Please use the Resident Inquiry / Contact Update form on this page.
-    </p>
+  <details class="faq-item">
+    <summary>How do I send a general question or update my contact information?</summary>
+    <div class="faq-answer">
+      <p>Please use the Resident Inquiry / Contact Update form on this page.</p>
+    </div>
   </details>
 
-  <details style="border:1px solid #e5e7eb; border-radius:10px; background:#f9fafb; padding:14px 16px;">
-    <summary style="cursor:pointer; font-weight:600; color:#1f3a6d; list-style:none;">
-      Are pets allowed?
-    </summary>
-    <p style="margin:12px 0 0 0; color:#4b5563; line-height:1.6;">
-      Pets are not permitted at the property.
-    </p>
+  <details class="faq-item">
+    <summary>Are pets allowed?</summary>
+    <div class="faq-answer">
+      <p>Pets are not permitted at the property.</p>
+    </div>
   </details>
 </div>
 <p style="font-size:13px; color:#6b7280; line-height:1.6;">
