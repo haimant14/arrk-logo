@@ -7,65 +7,144 @@
 
 <style>
 body {
-  margin:0;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background:#f7f9fc;
-  color:#1f2937;
+  background: #f7f9fc;
+  color: #1f2937;
 }
 
 .wrap {
-  max-width:900px;
-  margin:auto;
-  padding:20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
 header {
-  background:#fff;
-  border-bottom:1px solid #e5e7eb;
-  padding:20px 0 12px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 0 12px;
 }
 
 .brand {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .brand img {
-  width:120px;
-  height:auto;
-  margin-bottom:8px;
+  width: 120px;
+  height: auto;
+  margin-bottom: 8px;
 }
 
 .brand-text h1 {
-  margin:0;
-  font-size:32px;
-  color:#1f3a6d;
-  font-weight:700;
+  margin: 0;
+  font-size: 32px;
+  color: #1f3a6d;
+  font-weight: 700;
 }
 
 .brand-text p {
-  margin:4px 0 0;
-  color:#6b7280;
-  font-size:16px;
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 16px;
 }
 
 .section {
-  background:#fff;
-  padding:30px;
-  margin-top:20px;
-  border-radius:12px;
+  background: #fff;
+  padding: 34px 30px;
+  margin-top: 24px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
 }
 
 h2 {
-  color:#1f3a6d;
+  color: #1f3a6d;
+  margin-top: 0;
 }
 
 a {
-  color:#1f3a6d;
-  text-decoration:none;
-  font-weight:bold;
+  color: #1f3a6d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav {
+  background: #1f3a6d;
+  padding: 14px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 18px;
+  text-decoration: none;
+}
+
+.nav .active {
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
+
+.nav .inactive {
+  font-weight: 600;
+}
+
+.hero-card {
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.hero-card p {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.status-box {
+  max-width: 620px;
+  margin: 22px auto 0 auto;
+  background: #f7f9fc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 22px;
+}
+
+.status-box p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.button-wrap {
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-block;
+  background: #1f3a6d;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.footer-main {
+  text-align: center;
+  margin-top: 40px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.footer-copy {
+  text-align: center;
+  padding: 30px 20px;
+  color: #6b7280;
+  font-size: 14px;
 }
 </style>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -83,37 +162,35 @@ a {
   </div>
 </header>
 
-<nav style="background:#1f3a6d; padding:14px 20px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.06);">
-  <a href="index.html" style="color:#fff; margin:0 18px; text-decoration:none; font-weight:600;">Home</a>
-  <a href="available-rentals.html" style="color:#fff; margin:0 18px; text-decoration:none; font-weight:700; border-bottom:2px solid #fff; padding-bottom:2px;">Available Rentals</a>
+<nav class="nav">
+  <a href="index.html" class="inactive">Home</a>
+  <a href="available-rentals.html" class="active">Available Rentals</a>
 </nav>
 
 <div class="wrap">
-  <div class="section" style="text-align:center; padding:50px 30px;">
-    <h2 style="margin-bottom:14px;">Available Rentals</h2>
-    <p style="color:#4b5563; line-height:1.7; max-width:620px; margin:0 auto 22px auto;">
+  <div class="section hero-card">
+    <h2>Available Rentals</h2>
+    <p>
       There are currently no available rentals at this time. Please check back for future availability.
     </p>
 
-    <div style="display:inline-block; background:#f7f9fc; border:1px solid #e5e7eb; border-radius:12px; padding:18px 22px; margin-top:8px;">
-      <p style="margin:0; color:#6b7280; font-size:14px;">
-        Updates will be posted here when future rental opportunities become available.
+    <div class="status-box">
+      <p>
+        Future rental opportunities, property details, and photos will be posted here when available.
       </p>
     </div>
 
-    <div style="margin-top:28px;">
-      <a href="index.html" style="display:inline-block; background:#1f3a6d; color:#fff; text-decoration:none; padding:12px 20px; border-radius:8px; font-weight:bold;">
-        Return Home
-      </a>
+    <div class="button-wrap">
+      <a href="index.html" class="button">Return Home</a>
     </div>
   </div>
 
-  <footer style="text-align:center; margin-top:40px; color:#6b7280; font-size:14px;">
+  <footer class="footer-main">
     ARRK Property Management LLC<br>
     Managed by Haimant Jokho
   </footer>
 
-  <footer style="text-align:center; padding:30px 20px; color:#6b7280; font-size:14px;">
+  <footer class="footer-copy">
     © 2026 ARRK Property Management LLC
   </footer>
 </div>
