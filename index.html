@@ -320,53 +320,54 @@ a {
   <h2>FAQ</h2>
 
   <style>
-    .faq-item {
-      margin-bottom: 12px;
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      background: #f9fafb;
-      padding: 0;
-      overflow: hidden;
-    }
+  .faq-item {
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f9fafb;
+    padding: 0;
+    overflow: hidden;
+  }
 
-    .faq-item summary {
-      cursor: pointer;
-      font-weight: 600;
-      color: #1f3a6d;
-      list-style: none;
-      padding: 14px 16px;
-      position: relative;
-    }
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #1f3a6d;
+    list-style: none;
+    padding: 14px 48px 14px 16px;
+    position: relative;
+    line-height: 1.4;
+  }
 
-    .faq-item summary::-webkit-details-marker {
-      display: none;
-    }
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
 
-    .faq-item summary::after {
-      content: "+";
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 20px;
-      font-weight: 600;
-      color: #1f3a6d;
-    }
+  .faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f3a6d;
+    line-height: 1;
+  }
 
-    .faq-item[open] summary::after {
-      content: "−";
-    }
+  .faq-item[open] summary::after {
+    content: "−";
+  }
 
-    .faq-answer {
-      padding: 0 16px 14px 16px;
-      color: #4b5563;
-      line-height: 1.6;
-    }
+  .faq-answer {
+    padding: 0 16px 14px 16px;
+    color: #4b5563;
+    line-height: 1.6;
+  }
 
-    .faq-answer p {
-      margin: 0;
-    }
-  </style>
+  .faq-answer p {
+    margin: 0;
+  }
+</style>
 
   <details class="faq-item">
     <summary>How do I submit a maintenance request?</summary>
